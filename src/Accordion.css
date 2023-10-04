@@ -1,0 +1,52 @@
+.accordion-container {
+  width: 100%;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.accordion-header {
+  padding: 15px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  font-weight: bold;
+}
+
+.accordion-icon {
+  font-size: 24px;
+  transition: transform all 0.3s;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+}
+
+/* Styles for the open content */
+.accordion-content.open {
+  display: block;
+}
+
+/* Hover effect on accordion items */
+.accordion-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect on accordion header */
+.accordion-header:hover {
+  background-color: #ccaaaa;
+}
